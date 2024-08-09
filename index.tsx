@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import React from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 
@@ -17,7 +17,7 @@ const defaultOptions: ExportOptions = {
 };
 
 const useExportExcel = () => {
-  const exportExcel = useCallback(
+  const exportExcel = React.useCallback(
     (data: any[], options?: ExportOptions) => {
       const { sheetName, bookType, filename, columnWidths } = {
         ...defaultOptions,
