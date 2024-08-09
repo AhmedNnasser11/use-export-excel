@@ -1,4 +1,4 @@
-# use-export-excel Hook
+# use-export-excel
 
 The `useExportExcel` hook allows you to export data to an Excel file.
 
