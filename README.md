@@ -2,6 +2,14 @@
 
 The `useExportExcel` hook allows you to export data to an Excel file.
 
+## Example on CodeSandbox
+
+You can find a live example of how to use this component on CodeSandbox:
+
+[CodeSandbox Example](https://codesandbox.io/p/sandbox/export-excel-5mdr6n?file=%2Fsrc%2FApp.tsx%3A30%2C62)
+
+[My LinkedIn](https://www.linkedin.com/in/ahmed-nasser-931490212/)
+
 #### Parameters
 
 This hook does not take any parameters directly, but you can customize the export by passing options to the `exportExcel` function.
