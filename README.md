@@ -17,6 +17,15 @@ This hook does not take any parameters directly, but you can customize the expor
 
 - `exportExcel`: A function to export the table data to an Excel file.
 
+## Packages Used
+
+This package relies on the following dependencies:
+
+- **file-saver**: A library for saving files on the client-side.
+- **xlsx**: A library for reading, writing, and manipulating spreadsheets in Excel formats.
+
+These packages are included as dependencies when you install `use-export-excel`.
+
 #### Example
 
 ```typescript
@@ -36,7 +45,7 @@ const MyComponent = () => {
       sheetName: 'CustomSheetName',
       bookType: 'xlsx', // Can be 'xlsx', 'csv', 'xlsb', etc.
       filename: 'CustomFilename.xlsx',
-      columnWidths: [100, 200, 150], // Widths in pixels for each column
+      columnWidths: [100, 200], // Widths in pixels for each column
     });
   };
 

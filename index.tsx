@@ -16,7 +16,7 @@ const defaultOptions: ExportOptions = {
   columnWidths: [],
 };
 
-const useExportTableToExcel = () => {
+const useExportExcel = () => {
   const exportExcel = useCallback(
     (data: any[], options?: ExportOptions) => {
       const { sheetName, bookType, filename, columnWidths } = {
@@ -73,4 +73,4 @@ const useExportTableToExcel = () => {
   return { exportExcel };
 };
 
-export default useExportTableToExcel;
+export default useExportExcel;
