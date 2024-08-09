@@ -22,8 +22,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = require("react");
+const react_1 = __importDefault(require("react"));
 const XLSX = __importStar(require("xlsx"));
 const file_saver_1 = require("file-saver");
 const defaultOptions = {
@@ -33,7 +36,7 @@ const defaultOptions = {
     columnWidths: [],
 };
 const useExportExcel = () => {
-    const exportExcel = (0, react_1.useCallback)((data, options) => {
+    const exportExcel = react_1.default.useCallback((data, options) => {
         const { sheetName, bookType, filename, columnWidths } = Object.assign(Object.assign({}, defaultOptions), options);
         // Convert JSON data to worksheet
         const worksheet = XLSX.utils.json_to_sheet(data);

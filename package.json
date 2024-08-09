@@ -1,6 +1,6 @@
 {
   "name": "use-export-excel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "this packge for reactjs and nextjs app to export excel",
   "main": "index.js",
   "scripts": {

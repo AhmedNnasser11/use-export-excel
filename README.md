@@ -2,11 +2,11 @@
 
 The `useExportExcel` hook allows you to export data to an Excel file.
 
-## Example on CodeSandbox
+## Example on stackblitz
 
-You can find a live example of how to use this component on CodeSandbox:
+You can find a live example of how to use this component on stackblitz:
 
-[CodeSandbox Example](https://codesandbox.io/p/sandbox/export-excel-5mdr6n?file=%2Fsrc%2FApp.tsx%3A30%2C62)
+[stackblitz Example](https://stackblitz.com/edit/vitejs-vite-xer2as?file=src%2FApp.tsx&terminal=dev)
 
 [My LinkedIn](https://www.linkedin.com/in/ahmed-nasser-931490212/)
 
