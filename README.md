@@ -1,27 +1,38 @@
+
 # use-export-excel
 
-The `useExportExcel` hook allows you to export data to an Excel file.
+The `useExportExcel` hook enables you to export data to an Excel file effortlessly, making it an essential tool for any React.js or Next.js project.
 
-## Example on stackblitz
+## Example on StackBlitz
 
-You can find a live example of how to use this component on stackblitz:
+Check out a live example of how to use this component on StackBlitz:
 
-[stackblitz Example](https://stackblitz.com/edit/vitejs-vite-xer2as?file=src%2FApp.tsx&terminal=dev)
+[StackBlitz Example](https://stackblitz.com/edit/vitejs-vite-xer2as?file=src%2FApp.tsx&terminal=dev)
 
-[My LinkedIn](https://www.linkedin.com/in/ahmed-nasser-931490212/)
+## Author
 
-#### Parameters
+[Ahmed Nasser](https://www.linkedin.com/in/ahmed-nasser-931490212/)
+
+## Installation
+
+To install the package, use the following npm command:
+
+```bash
+npm install use-export-excel
+```
+
+## Parameters
 
 This hook does not take any parameters directly, but you can customize the export by passing options to the `exportExcel` function.
 
-#### Options
+### Options
 
 - `sheetName`: The name of the sheet within the Excel file (default: `Sheet1`).
 - `bookType`: The format of the Excel file (e.g., `xlsx`, `xls`, `csv`).
 - `filename`: The name of the exported file (default: `table.xlsx`).
 - `columnWidths`: An array specifying the width of each column in pixels.
 
-#### Returns
+## Returns
 
 - `exportExcel`: A function to export the table data to an Excel file.
 
@@ -34,11 +45,13 @@ This package relies on the following dependencies:
 
 These packages are included as dependencies when you install `use-export-excel`.
 
-#### Example
+## Usage Example
+
+Here's a basic example of how to use the `useExportExcel` hook in a React component:
 
 ```typescript
 import React from 'react';
-import  useExportExcel from 'use-export-excel';
+import useExportExcel from 'use-export-excel';
 
 const MyComponent = () => {
   const { exportExcel } = useExportExcel();
@@ -67,3 +80,8 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+```
+
+## License
+
+This project is licensed under the MIT License.
